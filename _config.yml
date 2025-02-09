@@ -13,7 +13,7 @@ canonical: https://ycsek.github.io/
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
 github_link: https://github.com/ycsek
-ORCID_link: https://orcid.org/0009-0003-9656-4336
+linkedin: www.linkedin.com/in/jason-05cs
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
@@ -33,9 +33,6 @@ auto_dark_mode: true
 # You can use this option to choose between Serif or Sans Serif fonts.
 font: "Serif" # or "Sans Serif"
 
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
