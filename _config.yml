@@ -9,11 +9,11 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Jason Shi"
 title_separator          : "-"
 name                     : &name "Jason (Yuchen) Shi"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+description              : &description "Jason (Yuchen) Shi is an undergraduate student at Faculty of Data Science ,City University of Macau, majoring in Computer Science. He is interested in Deep Learning, Trustworthy Artificial Intelligence. Supervised by Prof. Huajie Chen ."
+url                      : https://ycsek.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
@@ -25,15 +25,15 @@ author:
   avatar           : "profile.png"
   name             : "Jason (Yuchen) Shi" 
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Taipa Macau" # Location/City
+  bio              : "An undergraduate student at City University of Macau, majoring in Computer Science. "
+  location         : "Taipa, Macau" # Location/City
   employer         : "City University of Macau" # Employer/Organization
   uri              : # URL
   email            : "D23090120503@cityu dot edu dot mo" #
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  # googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0003-9656-4336"
   semantic         : # URL
@@ -50,7 +50,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
