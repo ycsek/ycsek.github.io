@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Jason Shi"
+title                    : "Jason Shi （石雨宸）"
 title_separator          : "-"
 name                     : &name "Jason (Yuchen) Shi"
-description              : "Jason (Yuchen) Shi (石雨宸) ."
+description              : "Jason (Yuchen) Shi, 石雨宸."
 url                      : https://ycsek.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
