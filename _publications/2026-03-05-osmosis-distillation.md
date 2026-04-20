@@ -7,6 +7,6 @@ excerpt: 'Transfer learning is devised to leverage knowledge from pre-trained mo
 date: 2026-03-05
 venue: 'Preprint (arXiv)'
 paperurl: 'https://arxiv.org/abs/2603.04859'
-bibtexurl: 'https://scholar.googleusercontent.com/scholar.bib?q=info:i2ReIlBi0W8J:scholar.google.com/&output=citation&scisdr=CjyvfZOKEImw5Slc2lM:ADi0EEUAAAAAaeZawlP-9WH9CV-brnFimh1hlbs&scisig=ADi0EEUAAAAAaeZawrnybbsyeoR9s9PCnmbF3Io&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1'
+bibtexurl: 'https://ycsek.github.io/files/bibtex1.bib'
 citation: 'Shi, Y., Chen, H., Xu, H., Liu, Z., Shen, J., Liu, C., ... & Zhou, W. (2026). Osmosis Distillation: Model Hijacking with the Fewest Samples. arXiv preprint arXiv:2603.04859.'
 ---
