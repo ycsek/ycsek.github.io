@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Jason Shi （石雨宸）"
+title                    : "Jason (Yuchen) Shi"
 title_separator          : "-"
 name                     : &name "Jason (Yuchen) Shi"
 description              : "Jason (Yuchen) Shi, 石雨宸."
@@ -38,7 +38,7 @@ author:
   orcid            : "https://orcid.org/0009-0003-9656-4336"
   semantic         : # URL
   pubmed           : # URL
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Yuchen-Shi-17?ev=hdr_xprf"
   scopus           : # URL
 
   # Repositories and software development
