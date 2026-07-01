@@ -2,7 +2,7 @@
 title: "Osmosis Distillation: Model Hijacking with the Fewest Samples"
 collection: publications
 category:  manuscripts
-permalink: /publication/2026-04-21-osmosis-distillation
+permalink: /publication/2026-03-05-osmosis-distillation
 date: 2026
 venue: 'Preprint (arXiv)'
 paperurl: 'https://arxiv.org/abs/2603.04859'
