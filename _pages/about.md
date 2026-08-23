@@ -11,7 +11,7 @@ redirect_from:
 Biography
 ======
 
-I am an undergraduate student at the [Faculty of Data Science](https://fds.cityu.edu.mo/), [City University of Macau](https://cityu.edu.mo/zh/), majoring in Computer Science. I am interested in security and privacy in Deep Learning. Supervised by [Prof. Huajie Chen](https://fds.cityu.edu.mo/en/members/305).
+I am an undergraduate student at the [Faculty of Data Science](https://fds.cityu.edu.mo/), [City University of Macau](https://cityu.edu.mo/zh/), majoring in Computer Science. I am interested in Trustworthy AI, AI security. Supervised by [Prof. Huajie Chen](https://fds.cityu.edu.mo/en/members/305).
 
 Recent News
 ======
