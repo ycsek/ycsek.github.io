@@ -1,0 +1,7 @@
+{% if include.publication.accepted_month %}
+  <p>Accepted by <i>{{ include.publication.venue }}</i>, {{ include.publication.accepted_month }}</p>
+{% elsif include.publication.category == 'preprints' %}
+  <p><i>{{ include.publication.venue }}</i>, {{ include.publication.date | date: "%b %Y" }}</p>
+{% else %}
+  <p>Published in <i>{{ include.publication.venue }}</i>, {{ include.publication.date | default: "1900-01-01" | date: "%Y" }}</p>
+{% endif %}
