@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, City University of Macau, 2023--present
+* Bachelor of Computer Science, City University of Macau, Sept. 2023 – Present
 
 <!-- Work experience
 ======
