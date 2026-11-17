@@ -1,152 +1,110 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Jason (Yuchen) Shi",
+    "email": "D23090120503@cityu dot edu dot mo",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://ycsek.github.io",
+    "summary": "I am an undergraduate student in Computer Science at the Faculty of Data Science, City University of Macau, supervised by Prof. Huajie Chen. My research interests are Trustworthy AI and Bio-Security.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "address": "Avenida Padre Tomás Pereira",
+      "postalCode": "999078",
+      "city": "Taipa",
+      "countryCode": "MO",
+      "region": "Macau"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=SXuPyDAAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0003-9656-4336"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "",
+        "url": "https://www.researchgate.net/profile/Yuchen-Shi-17?ev=hdr_xprf"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "ycsek",
+        "url": "https://github.com/ycsek"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "City University of Macau",
+      "area": "Bachelor of Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "Sept. 2023",
+      "endDate": "",
       "gpa": null,
       "courses": []
     }
   ],
   "skills": [],
-  "languages": [],
-  "interests": [],
+  "languages": [
+    {
+      "language": "Mandarin",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "Cantonese",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Trustworthy AI",
+      "keywords": []
+    },
+    {
+      "name": "Bio-Security",
+      "keywords": []
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Osmosis Distillation: Model Hijacking With the Fewest Samples",
+      "publisher": "IEEE Transactions on Dependable and Secure Computing (IEEE TDSC)",
+      "releaseDate": "2026",
+      "website": "https://ieeexplore.ieee.org/document/11770378",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "CSC: Turning the Adversary's Poison against Itself",
+      "publisher": "31st Australasian Conference on Information Security and Privacy (ACISP 2026)",
+      "releaseDate": "2026",
+      "website": "https://link.springer.com/chapter/10.1007/978-981-92-3015-0_14",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "MARCO: The Radioactive Watermark for Protein Generative Models",
+      "publisher": "arXiv preprint arXiv:2610.08316",
+      "releaseDate": "2026",
+      "website": "https://arxiv.org/abs/2610.08316",
+      "summary": ""
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "presentations": [],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
+      "name": "CityU Macau LaTeX Template",
+      "category": "Open Source",
       "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "url": "https://github.com/ycsek/CityU_Macau_LaTex_Template",
+      "description": "A personally maintained LaTeX thesis template for City University of Macau. Also available on <a href=\"https://www.overleaf.com/latex/templates/city-university-of-macau-thesis-template/qtbkhjdwbxkh\">Overleaf</a>."
     }
   ]
 }

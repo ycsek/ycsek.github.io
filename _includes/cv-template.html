@@ -3,33 +3,33 @@
 <div class="cv-container">
   <!-- Basic Information -->
   <div class="cv-section cv-header">
-    <h1>{{ cv.basics.name }}</h1>
-    {% if cv.basics.label %}
-    <h2>{{ cv.basics.label }}</h2>
+    <h2 class="cv-name">{{ cv.basics.name | escape }}</h2>
+    {% if cv.basics.label != blank %}
+    <p class="cv-label">{{ cv.basics.label | escape }}</p>
     {% endif %}
     
     <div class="cv-contact">
-      {% if cv.basics.email %}
+      {% if cv.basics.email != blank %}
       <div class="cv-contact-item">
-        <i class="fas fa-envelope"></i> {{ cv.basics.email }}
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ cv.basics.email | escape }}
       </div>
       {% endif %}
       
-      {% if cv.basics.phone %}
+      {% if cv.basics.phone != blank %}
       <div class="cv-contact-item">
-        <i class="fas fa-phone"></i> {{ cv.basics.phone }}
+        <i class="fa-solid fa-phone" aria-hidden="true"></i> {{ cv.basics.phone | escape }}
       </div>
       {% endif %}
       
-      {% if cv.basics.website %}
+      {% if cv.basics.website != blank %}
       <div class="cv-contact-item">
-        <i class="fas fa-globe"></i> <a href="{{ cv.basics.website }}" target="_blank">{{ cv.basics.website }}</a>
+        <i class="fa-solid fa-globe" aria-hidden="true"></i> <a href="{{ cv.basics.website | escape }}" target="_blank" rel="noopener noreferrer">{{ cv.basics.website | escape }}</a>
       </div>
       {% endif %}
       
-      {% if cv.basics.location.city %}
+      {% if cv.basics.location.address != blank or cv.basics.location.city != blank or cv.basics.location.region != blank %}
       <div class="cv-contact-item">
-        <i class="fas fa-map-marker-alt"></i> {{ cv.basics.location.city }}{% if cv.basics.location.region %}, {{ cv.basics.location.region }}{% endif %}{% if cv.basics.location.countryCode %}, {{ cv.basics.location.countryCode }}{% endif %}
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i> {% if cv.basics.location.address != blank %}{{ cv.basics.location.address | escape }}{% endif %}{% if cv.basics.location.city != blank %}{% if cv.basics.location.address != blank %}, {% endif %}{{ cv.basics.location.city | escape }}{% endif %}{% if cv.basics.location.region != blank %}{% if cv.basics.location.address != blank or cv.basics.location.city != blank %}, {% endif %}{{ cv.basics.location.region | escape }}{% endif %}
       </div>
       {% endif %}
     </div>
@@ -37,15 +37,15 @@
     {% if cv.basics.profiles.size > 0 %}
     <div class="cv-profiles">
       {% for profile in cv.basics.profiles %}
-      <a href="{{ profile.url }}" target="_blank" class="cv-profile-link">
-        <i class="fab fa-{{ profile.network | downcase }}"></i> {{ profile.network }}
+      <a href="{{ profile.url | escape }}" target="_blank" rel="noopener noreferrer" class="cv-profile-link">
+        {{ profile.network | escape }}
       </a>
       {% endfor %}
     </div>
     {% endif %}
   </div>
   
-  {% if cv.basics.summary %}
+  {% if cv.basics.summary != blank %}
   <!-- Summary -->
   <div class="cv-section">
     <h2>Summary</h2>
@@ -62,11 +62,26 @@
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ education.area }}</div>
-          <div class="cv-item-date">{{ education.endDate }}</div>
+          {% assign start_date = education.startDate %}
+          {% assign end_date = education.endDate %}
+          {% if start_date.size == 7 %}{% assign start_date = start_date | append: "-01" %}{% endif %}
+          {% if end_date.size == 7 %}{% assign end_date = end_date | append: "-01" %}{% endif %}
+          {% if start_date != blank or end_date != blank %}
+          <div class="cv-item-date">
+            {% if start_date != blank %}
+              {% if start_date.size == 4 %}{{ start_date }}{% else %}{{ start_date | date: "%b %Y" }}{% endif %} &ndash;
+            {% endif %}
+            {% if end_date != blank %}
+              {% if end_date.size == 4 %}{{ end_date }}{% else %}{{ end_date | date: "%b %Y" }}{% endif %}
+            {% else %}
+              Present
+            {% endif %}
+          </div>
+          {% endif %}
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ education.institution }}</div>
-          {% if education.gpa %}
+          {% if education.gpa != blank %}
           <div class="cv-item-detail">GPA: {{ education.gpa }}</div>
           {% endif %}
           {% if education.courses.size > 0 %}
@@ -90,11 +105,11 @@
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ work.position }}</div>
-          <div class="cv-item-date">{{ work.startDate }}{% if work.endDate %} - {{ work.endDate }}{% endif %}</div>
+          <div class="cv-item-date">{{ work.startDate }}{% if work.endDate != blank %} - {{ work.endDate }}{% endif %}</div>
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ work.company }}</div>
-          {% if work.summary %}
+          {% if work.summary != blank %}
           <div class="cv-item-detail">{{ work.summary }}</div>
           {% endif %}
           {% if work.highlights.size > 0 %}
@@ -143,12 +158,12 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ publication.publisher }}</div>
-          {% if publication.summary %}
+          {% if publication.summary != blank %}
           <div class="cv-item-detail">{{ publication.summary }}</div>
           {% endif %}
-          {% if publication.website %}
+          {% if publication.website != blank %}
           <div class="cv-item-detail">
-            <a href="{{ publication.website }}" target="_blank">View Publication</a>
+            <a href="{{ publication.website | escape }}" target="_blank" rel="noopener noreferrer">View Publication</a>
           </div>
           {% endif %}
         </div>
@@ -171,10 +186,10 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ talk.event }}</div>
-          {% if talk.location %}
+          {% if talk.location != blank %}
           <div class="cv-item-detail">{{ talk.location }}</div>
           {% endif %}
-          {% if talk.description %}
+          {% if talk.description != blank %}
           <div class="cv-item-detail">{{ talk.description }}</div>
           {% endif %}
         </div>
@@ -197,10 +212,10 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ teaching.institution }}</div>
-          {% if teaching.role %}
+          {% if teaching.role != blank %}
           <div class="cv-item-detail">Role: {{ teaching.role }}</div>
           {% endif %}
-          {% if teaching.description %}
+          {% if teaching.description != blank %}
           <div class="cv-item-detail">{{ teaching.description }}</div>
           {% endif %}
         </div>
@@ -211,24 +226,24 @@
   {% endif %}
   
   {% if cv.portfolio.size > 0 %}
-  <!-- Portfolio -->
+  <!-- Projects -->
   <div class="cv-section">
-    <h2>Portfolio</h2>
+    <h2>Projects</h2>
     <ul class="cv-list">
       {% for item in cv.portfolio %}
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ item.name }}</div>
-          <div class="cv-item-date">{{ item.date | slice: 0, 4 }}</div>
+          {% if item.date != blank %}<div class="cv-item-date">{{ item.date | slice: 0, 4 }}</div>{% endif %}
         </div>
         <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ item.category | capitalize }}</div>
-          {% if item.description %}
+          <div class="cv-item-subtitle">{{ item.category }}</div>
+          {% if item.description != blank %}
           <div class="cv-item-detail">{{ item.description }}</div>
           {% endif %}
-          {% if item.url %}
+          {% if item.url != blank %}
           <div class="cv-item-detail">
-            <a href="{{ item.url }}" target="_blank">View Project</a>
+            <a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
           {% endif %}
         </div>
@@ -256,9 +271,9 @@
   {% endif %}
   
   {% if cv.interests.size > 0 %}
-  <!-- Interests -->
+  <!-- Research Interests -->
   <div class="cv-section">
-    <h2>Interests</h2>
+    <h2>Research Interests</h2>
     <ul class="cv-list">
       {% for interest in cv.interests %}
       <li class="cv-item">
@@ -283,7 +298,7 @@
       <li class="cv-item">
         <div class="cv-item-content">
           <div class="cv-item-title">{{ reference.name }}</div>
-          {% if reference.reference %}
+          {% if reference.reference != blank %}
           <div class="cv-item-detail">{{ reference.reference }}</div>
           {% endif %}
         </div>
